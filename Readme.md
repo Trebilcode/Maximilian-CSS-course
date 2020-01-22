@@ -134,5 +134,40 @@ width: calc(thisElementWidth - elementYouWantToBeAlignedWithWidth);
 
 Let's suppose you have a title and a nav-bar you want to align. The title will have a set width, so you'll need to subtract the title's width from the nav-bar one. All this made within the width property of the nav-bar, and using the calc function as code above.
 
--The white space you have between your two elements in your HTML code, will cause them to not be aligned;
--You can place the second element right next to the first in your HTML, or you just need to asign a bigger value to the subtracting value in the calc function.
+- <The white space you have between your two elements in your HTML code, will cause them to not be aligned;
+- <You can place the second element right next to the first in your HTML, or you just need to asign a bigger value to the subtracting value in the calc function>
+
+# CSS CLASSES AND ID'S
+
+# classes 
+
+You should use classes to group elements that will end having the same styles.
+
+Multiple classes can be applied to the same element. If you change an element's styles within two classes, the one defined last in the css file, wil override the first one.
+
+# Id's
+
+Id's should be used only once in th webpage.
+
+They're also good for linking to a specific part of your page, so you just create an id for any part within the webpage you want to scroll or visit, and ten asign an anchor tag with the href pointing to the id you created:
+
+<a href="#main-section"></a>
+
+<section id="main-section"></section>
+
+# !IMPORTANT
+
+You can use it to override any property.
+
+h1 {
+
+}
+
+# :NOT() PSEUDOCLASS
+
+If you add this pseudoclass, what's inside the parenthesis, indicates what you want to style.
+
+<a:not(.active){color: red;
+}>
+
+In the code above, all <a> tags that don't have the active class, will have a red text color.
