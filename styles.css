@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  /* height: 100%; */
 }
 
-html {
+ html, body, main {
   height: 100%;
+  position: relative;
 }
 
 
@@ -13,15 +13,21 @@ body {
    font-family: 'Montserrat', sans-serif;
    background-color: black;
    margin: 0;
-   height: 100%;
+   /* height: 100%; */
  }
 
-main {
+/* main {
   height: 100%;
+} */
+
+.main-container {
+  min-height: 100vh;
+  display: block;
+  position: relative;
 }
 
- .main-header {
-   background-color: rgb(207, 204, 204);
+.main-header {
+   background-color: rgba(247, 79, 79, 0.904);
    /* width: 100%; */
    padding: 1% 2%;
    
@@ -62,7 +68,7 @@ main {
 }
 
 .main-nav__item > a {
-  color: rgba(7, 20, 2, 0.63);
+  color: black;
   text-decoration: none;
   padding: 5% 0;
   
@@ -86,28 +92,58 @@ main {
   color: rgb(66, 196, 100);
   background-color: white;
   border: none;
-
 }
 
+.main-footer {
+  background-color: black;
+  display: inline-block;
+  color: white;  
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
 
+.main-footer ul {
+  list-style: none;  
+}
+
+.main-footer a {
+  text-decoration: none;
+}
+
+.main-footer li {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 3%;
+}
 #product-overview {
+  display: block;
   background: black;
-  padding: 20px;
-  border: 5px solid white;
-  /* margin: 20px; */
-  /* width: 100%; */
-  height: 60%;
-   background: url("freedom.jpeg");
+  border-bottom: 5px solid white;
+  border-top: 5px solid black;
+  width: 100%;
+  height: 50vh;
+  background: url("freedom.jpeg");
+  background-size: 100% 100%;
+
 }
 
 #product-overview h1 {
-  color: rgb(120, 134, 124);
-  font-family: 'Anton', sans-serif;
+  color: black;
+  font-family: sans-serif;
+  
+}
 
+#plans {
+  margin-bottom: 0;
+}
+
+#plans div {
+  text-align: center;
 }
 
 .plan {
-  background-color: lightseagreen;
+  background-color: rgb(66, 83, 231);
   text-align: center;
   padding: 16px;
   margin: 8px;
@@ -120,10 +156,14 @@ main {
   background-color: rgb(66, 196, 100);
   color: white;
   box-shadow: 4px 1px 6px 1px rgba(255, 255, 255, 0.767);
+  height: 70%;
+  
 }
 
 .plan__annotation {
   padding: 3%;
+  width: 80%;
+  margin: 4% auto;
   background-color: white;
   color: rgb(0, 0, 0);
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.5);
@@ -131,14 +171,14 @@ main {
 }
 
 .plan__title {
-  color: rgb(3, 73, 3);
+  color: black;
 }
 
 .plan__price {
-  color: rgb(231, 225, 225);
+  color: white;
 }
 
-.plan--highlighted
+.plan--highlighted,
 .plan__features {
   padding: 0;
   list-style: none;
@@ -147,6 +187,8 @@ main {
 .plan__features li {
   padding: 4% 0;
 }
+
+
 
 .button {
   color: black;
@@ -168,14 +210,51 @@ main {
 .button:focus {
   outline: none;
 }
+
+.highlighted-button {
+  margin-bottom: 3.8%;
+}
+
 .section-title {
   color: white;
   margin: 20px;
   text-align: center;
 }
 
-.section-title + div {
-  width: 100%;
-  margin: 0 2.8%;
+#key-features {
+  background-color: rgba(247, 79, 79, 0.904);
+  padding-bottom: 2%;
+  width: 100%;  
+
+}
+
+#key-features .section-title {
+  padding-top: 2%;
+}
+
+.key-feature__list {
+  list-style: none;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+}
+
+.key-feature__image {
+ background-color: aliceblue; 
+ width: 125px;
+ height: 125px;
+ border: 2px solid black;
+ border-radius: 50%;
+ margin: 0 auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
 
