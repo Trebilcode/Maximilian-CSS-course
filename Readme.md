@@ -159,15 +159,12 @@ They're also good for linking to a specific part of your page, so you just creat
 
 You can use it to override any property.
 
-h1 {
-
-}
-
 # :NOT() PSEUDOCLASS
 
-If you add this pseudoclass, what's inside the parenthesis, indicates what you want to style.
+If you add this pseudoclass, what's inside the parenthesis, indicates the opposite of what you want to style.
 
 <a:not(.active){color: red;
 }>
 
 In the code above, all <a> tags that don't have the active class, will have a red text color.
+
