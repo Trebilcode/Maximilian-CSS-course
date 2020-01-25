@@ -168,3 +168,12 @@ If you add this pseudoclass, what's inside the parenthesis, indicates the opposi
 
 In the code above, all <a> tags that don't have the active class, will have a red text color.
 
+# FLOAT
+
+Takes the element out of the document flow, this meaning if you asign float to an element, other elements will take its place.
+
+We can keep the floating element space by adding a div with a class right after the element we want to float and with css you style it with:
+
+.myClass {
+  clear: clear-both;
+}

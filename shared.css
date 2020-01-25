@@ -12,7 +12,7 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
-   background-color: black;
+   background-color: white;
    margin: 0;
    /* height: 100%; */
  }
@@ -89,8 +89,6 @@ body {
   display: inline-block;
   position: absolute;
   width: 100%;
-  text-align: center;
-  margin: 1.5% 0;
 }
 
 .main-footer__links {
@@ -104,16 +102,21 @@ body {
 .main-footer__link {
   display: inline-block;
   margin: 0 5%;
+  padding: 1% 0;
+  padding: 1% 0;
+
 }
 
 .main-footer__link a {
-  color: blue;
+  color: white;
   text-decoration: none;
+
+
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  color: white;
+color: red;
 }
 
 .button {
