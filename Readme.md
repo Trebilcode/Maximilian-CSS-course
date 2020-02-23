@@ -177,3 +177,49 @@ We can keep the floating element space by adding a div with a class right after 
 .myClass {
   clear: clear-both;
 }
+
+
+
+# POSITIONING
+
+There are various ways to style an element depending on what you want to acomplish, but there's one in particular that's set as default <Static>.
+
+You can apply the position property to any element,no matter if it is a block or inline one.
+
+When working with positioning you can use the 
+# TOP, RIGHT, BOTTOM AND LEFT PROPERTIES.
+
+They work just as the margin and padding ones, but they depend on the viewport (the size of the current browser's window).
+
+# Position: fixed
+
+It will take out the element from the document flow, so now it will be above every other elements. It depends on the viewport.
+
+# Position: absolute
+
+Regarding the document flow, it will also take the element out of it, but the elements positioning will depend:
+
+If the element has an ancestor that has also a position applied, it will get positioned relative to that element.
+
+If it has no ancestors with the position property, it will be positioned relative to the html element.
+
+# Position: relative
+
+It won't take the element out of the docuemtn flow. It will move it (top, right etc) from its current position to the one you're specifing in your styles.
+
+# Position: sticky
+
+It'll act as a mix between fixed and relative. When you're scrolling, the element will scroll up to a set (by you) distance and it will start being fixed when its border its over. Then, when the element is at the last of its parent's element position, it will scroll as usual.
+
+
+# Z-index
+
+This will make elements to stack on top of each other depending on the value you assign to it. The element with the higher value will be on top of the others (with lesser value).
+
+Note: the default value of all elements is 0, and will only work if the position property is applied.
+
+# Overflow: hidden
+
+If you don't want for your element to be visible when its outside its parent (it was moved), you can use this property.
+
+Note: when applying this only to the body, you'll notice it won't work, 'cause it transfers the property to the html element (a CSS default behavior). So what you need to do is to apply the property to the body and the html element as well,this way you'll be able to move the body's child and hide it when overflowing if you want.
