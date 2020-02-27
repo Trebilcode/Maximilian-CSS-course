@@ -1,5 +1,10 @@
+html {
+  position: relative;
+}
+
 main {
-  padding-top: 32px;
+  position: absolute;
+  top: 10%;
 }
 
 .background {
@@ -66,7 +71,7 @@ main {
 #free {
   background: rgba(234, 252, 237, 0.95);
   float: right;
-  border-right: none;
+  /* border-right: none; */
   border-left: 4px solid darkgreen;
   text-align: right;
 }
@@ -89,3 +94,11 @@ main {
   color: #bbb;
 }
 
+.main-footer {
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  position: absolute;
+  bottom: -89%;
+}

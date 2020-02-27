@@ -223,3 +223,29 @@ Note: the default value of all elements is 0, and will only work if the position
 If you don't want for your element to be visible when its outside its parent (it was moved), you can use this property.
 
 Note: when applying this only to the body, you'll notice it won't work, 'cause it transfers the property to the html element (a CSS default behavior). So what you need to do is to apply the property to the body and the html element as well,this way you'll be able to move the body's child and hide it when overflowing if you want.
+
+
+# IMAGES AND BACKGROUNDS
+
+# Background-size: {width, height, cover, contain}
+
+It can be set to px or percentages. When you set the width to 100% and add no height value, it will try to adjust the image to its container's size.
+
+# cover
+
+Automatically sets the image to fill its container.
+
+# cover
+
+it ensures that the image its completely shown, but the image will not be adjusted to its container.
+
+# Background-position: {x-axis, y-axis}
+
+You decide how much of the image size to crop: from the left to right and top to bottom. 
+
+# Styling images
+
+Whenever you add an image to the page, it will be added with its original size. Also if the image is in a container, it doesn't matter if the container's size is changed, the image will still be the same size.
+
+You need to select the image and then change its size. Also, if you set the image's container size and then apply a height of 100% to the first, it won't work. This is because the container is an inline element, so if you want to use percentages with your image's style, you need to apply the inline-block or inline properties.
+
