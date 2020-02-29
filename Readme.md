@@ -249,3 +249,37 @@ Whenever you add an image to the page, it will be added with its original size. 
 
 You need to select the image and then change its size. Also, if you set the image's container size and then apply a height of 100% to the first, it won't work. This is because the container is an inline element, so if you want to use percentages with your image's style, you need to apply the inline-block or inline properties.
 
+# Linear Gradients
+
+<Are treated like images>
+<You can use directions and degrees>
+<It allows you to use as many colors as you want>
+<By setting a percentage after the color-choice, you can choose where the color is going to vanish>
+
+# background-image: 
+<linear-gradient ({direction [degrees]} | {color 1} {percentage} | {color2} {percentage}) >
+<linear-gradient (to left top, red, blue) >
+
+the above linear-gradient style will start a red gradient from the bottom-right part  of its container and will end at the left top with a blue color. 
+
+# Radial gradient
+
+<It's initially an ellipse>
+<Set its first argument as 'circle', to get a circle>
+<With the at keyword followed by top, right... you can set the gradient's initial position>
+<After the circle keyword, you can define radial-gradient's size, with percentages>
+<Once you've set the size, you can define the x and y axis position, with percentages (left to right, top to bottom)>
+
+# background-image: 
+<radial-gradient ({direction [degrees]} | {color 1} {percentage} | {color2}) >
+
+
+
+# FILTERS
+
+
+<Change the visual appearance of an element>
+
+
+
+
